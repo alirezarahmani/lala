@@ -7,9 +7,9 @@ use App\Infrastructure\Persistence\Doctrine\Type\RouteDoctrineType;
 use App\Infrastructure\Persistence\Doctrine\Type\StatusDoctrineType;
 use Doctrine\ORM\EntityManager;
 use Doctrine\DBAL\Types\Type;
-use Symfony\Bundle\FrameworkBundle\Tests\TestCase as TC;
+use PHPUnit\Framework\TestCase as PHPUnitTestCase;
 
-class TestCase extends TC
+abstract class TestCase extends PHPUnitTestCase
 {
     protected $entityManager;
     protected $schemaTool;
@@ -18,10 +18,6 @@ class TestCase extends TC
     {
         if (null === $this->entityManager) {
 
-            \Doctrine\DBAL\DriverManager::getConnection(array(
-                'driver' => 'pdo_sqlite',
-                'dbname' => ':memory:'
-            ));
             $config = new \Doctrine\ORM\Configuration();
 
             $config->setAutoGenerateProxyClasses(true);
@@ -30,7 +26,7 @@ class TestCase extends TC
             $config->setMetadataDriverImpl(
                 new \Doctrine\ORM\Mapping\Driver\XmlDriver(
                     array(
-                        __DIR__ . '/../src/Infrastructure/Persistence/Doctrine/ORM'
+                        __DIR__ . '/../tests'
                     )
                 )
             );

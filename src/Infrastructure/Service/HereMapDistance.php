@@ -9,7 +9,6 @@ use App\Domain\Model\Route;
 use Assert\Assertion;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
-use GuzzleHttp\Exception\ServerException;
 use Symfony\Component\HttpFoundation\Response;
 
 class HereMapDistance implements DistanceCalculatorInterface
