@@ -76,11 +76,14 @@ final class OrderController
      */
     public function all(ApiHttpRequestInterface $request, OrderRepositoryInterface $orderRepository): ApiResponseInterface
     {
-        $dataResult = $this->orderService->allOrders(
-            $request->getAttribute('page', 1),
-            $request->getAttribute('limit', 10)
-        );
-        return new ApiSuccessJsonResponse($dataResult);
+        try {
+            $dataResult = $this->orderService->allOrders(
+                intval($request->getAttribute('page', 1)),
+                intval($request->getAttribute('limit', 10))
+            );
+            return new ApiSuccessJsonResponse($dataResult);
+        } catch (\InvalidArgumentException $e) {
+            return new ApiErrorJsonResponse($e->getMessage(), $e->getCode());
+        }
     }
-
 }

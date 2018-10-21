@@ -12,6 +12,7 @@ use App\Domain\Model\OrderId;
 use App\Domain\OrderRepositoryInterface;
 use App\Infrastructure\Dto\OrdersDto;
 use Assert\Assertion;
+use Pagerfanta\Exception\LessThan1CurrentPageException;
 use Pagerfanta\Exception\OutOfRangeCurrentPageException;
 use Pagerfanta\Pagerfanta;
 use Symfony\Component\HttpFoundation\Response;
@@ -92,8 +93,8 @@ class OrderService
         try {
             /** @var Pagerfanta $ordersData */
             $ordersData = $this->orderRepository->getAll($page, $limit);
-        } catch (OutOfRangeCurrentPageException $e) {
-            return [];
+        } catch (OutOfRangeCurrentPageException | LessThan1CurrentPageException $e) {
+            throw new \InvalidArgumentException($e->getMessage());
         }
 
         return (new OrdersDto($ordersData->getIterator()))->getArrayCopy();
