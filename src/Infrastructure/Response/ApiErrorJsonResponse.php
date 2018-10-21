@@ -22,7 +22,8 @@ class ApiErrorJsonResponse extends JsonResponse implements ApiResponseInterface
             $code = Response::HTTP_INTERNAL_SERVER_ERROR;
         }
 
-        parent::__construct(            [
+        parent::__construct(
+            [
                 'error' =>  $errors
             ],
             $code

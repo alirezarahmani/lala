@@ -15,6 +15,10 @@ class ApiSuccessJsonResponse extends JsonResponse implements ApiResponseInterfac
      */
     public function __construct(array $data = ['status' => 'SUCCESS'], $code = Response::HTTP_OK)
     {
+        parent::__construct(
+            $data,
+            $code
+        );
         return $this->send();
     }
 }
