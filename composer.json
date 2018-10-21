@@ -8,6 +8,7 @@
         "beberlei/assert": "^3.0",
         "guzzlehttp/guzzle": "^6.3",
         "pagerfanta/pagerfanta": "^2.0",
+        "phpunit/phpunit": "^7.4",
         "ramsey/uuid": "^3.8",
         "symfony/console": "*",
         "symfony/flex": "^1.1",
@@ -17,7 +18,8 @@
     },
     "require-dev": {
         "symfony/dotenv": "*",
-        "symfony/maker-bundle": "^1.8"
+        "symfony/maker-bundle": "^1.8",
+        "symfony/test-pack": "^1.0"
     },
     "config": {
         "preferred-install": {
