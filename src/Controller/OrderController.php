@@ -26,7 +26,6 @@ final class OrderController
      */
     public function __construct(OrderService $orderService)
     {
-        opcache_reset();
         $this->orderService = $orderService;
     }
 

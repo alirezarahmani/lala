@@ -7,7 +7,7 @@
             table="orders"
             repository-class="App\Infrastructure\Persistence\Doctrine\DoctrineOrderRepository">
         <id name="id" type="order_id" column="id" />
-        <field name="distance" type="int"  nullable="false" />
+        <field name="distance" type="integer"  nullable="false" />
         <field name="route" type="route_doctrine_type"  nullable="false" />
         <field name="status" type="status_doctrine_type"  nullable="false" />
     </entity>

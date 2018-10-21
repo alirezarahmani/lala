@@ -94,7 +94,7 @@ class OrderService
             /** @var Pagerfanta $ordersData */
             $ordersData = $this->orderRepository->getAll($page, $limit);
         } catch (OutOfRangeCurrentPageException | LessThan1CurrentPageException $e) {
-            throw new \InvalidArgumentException($e->getMessage());
+            throw new \InvalidArgumentException($e->getMessage(), Response::HTTP_NOT_FOUND);
         }
 
         return (new OrdersDto($ordersData->getIterator()))->getArrayCopy();
