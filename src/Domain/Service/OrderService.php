@@ -12,6 +12,7 @@ use App\Domain\Model\OrderId;
 use App\Domain\OrderRepositoryInterface;
 use App\Infrastructure\Dto\OrdersDto;
 use Assert\Assertion;
+use Pagerfanta\Exception\OutOfRangeCurrentPageException;
 use Pagerfanta\Pagerfanta;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -88,8 +89,13 @@ class OrderService
      */
     public function allOrders(int $page, int $limit): array
     {
-        /** @var Pagerfanta $ordersData */
-        $ordersData = $this->orderRepository->getAll($page, $limit);
+        try {
+            /** @var Pagerfanta $ordersData */
+            $ordersData = $this->orderRepository->getAll($page, $limit);
+        } catch (OutOfRangeCurrentPageException $e) {
+            return [];
+        }
+
         return (new OrdersDto($ordersData->getIterator()))->getArrayCopy();
     }
 
