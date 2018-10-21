@@ -17,13 +17,13 @@ class DoctrineOrderRepository  extends EntityRepository implements OrderReposito
     /**
      * Finds a Order using given id.
      *
-     * @param OrderId $trackingId Id
+     * @param OrderId $orderId Id
      *
      * @return Order|object if found, else null
      */
-    public function get(OrderId $trackingId): ?Order
+    public function get(OrderId $orderId): ?Order
     {
-        return $this->find($trackingId);
+        return $this->find($orderId);
     }
 
     /**
@@ -57,7 +57,7 @@ class DoctrineOrderRepository  extends EntityRepository implements OrderReposito
      * @return OrderId
      * @throws \Exception
      */
-    public function getNextTrackingId(): OrderId
+    public function getNextOrderId(): OrderId
     {
         return OrderId::generate();
     }

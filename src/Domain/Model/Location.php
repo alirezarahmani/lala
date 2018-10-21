@@ -40,12 +40,11 @@ class Location
     {
         $this->latitude = $latitude;
         $this->longitude = $longitude;
-
+        var_dump($latitude,$longitude);
         $errorMessage = 'sorry, wrong point, please check lat:' . $latitude . ' and long: ' . $longitude;
-        Assertion::greaterOrEqualThan($this->latitude, -90.0, $errorMessage);
-        Assertion::lessOrEqualThan($this->latitude, 90.0, $errorMessage);
-        Assertion::greaterOrEqualThan($this->longitude, -180.0, $errorMessage);
-        Assertion::lessOrEqualThan($this->longitude, 180.0, $errorMessage);
+        Assertion::regex((string)$this->latitude, '/^(\+|-)?(?:90(?:(?:\.0{1,6})?)|(?:[0-9]|[1-8][0-9])(?:(?:\.[0-9]{1,6})?))$/', $errorMessage);
+        Assertion::regex((string)$this->longitude, '/^(\+|-)?(?:180(?:(?:\.0{1,6})?)|(?:[0-9]|[1-9][0-9]|1[0-7][0-9])(?:(?:\.[0-9]{1,6})?))$/', $errorMessage);
+
     }
 
     /**

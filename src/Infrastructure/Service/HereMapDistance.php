@@ -8,6 +8,8 @@ use App\Domain\DistanceCalculatorInterface;
 use App\Domain\Model\Route;
 use Assert\Assertion;
 use GuzzleHttp\Client;
+use GuzzleHttp\Exception\ClientException;
+use GuzzleHttp\Exception\ServerException;
 use Symfony\Component\HttpFoundation\Response;
 
 class HereMapDistance implements DistanceCalculatorInterface
@@ -22,8 +24,9 @@ class HereMapDistance implements DistanceCalculatorInterface
 
     public function calculate(Route $route): int
     {
-        $response = $this->client->request('GET', $this->uri, [
-            'query' => [
+        try {
+            $response = $this->client->request('GET', $this->uri, [
+                'query' => [
                     'waypoint0'=> (string)$route->origin(),
                     'waypoint1'=> (string)$route->destination(),
                     'mode' => 'fastest;car;traffic:enabled',
@@ -31,8 +34,11 @@ class HereMapDistance implements DistanceCalculatorInterface
                     'app_code' => '9v2BkviRwi9Ot26kp2IysQ',
                     'departure' => 'now'
                 ]
-        ]);
-        Assertion::eq($response->getStatusCode(), Response::HTTP_OK, 'distance service error');
+            ]);
+        } catch (ClientException $e) {
+            throw new \InvalidArgumentException('No Route Found with provided location', Response::HTTP_INTERNAL_SERVER_ERROR);
+        }
+
         $result = json_decode($response->getBody()->getContents(), true);
         Assertion::true(isset($result['response']['route'][0]['summary']['distance']), 'wrong response from HereMap');
         return $result['response']['route'][0]['summary']['distance'];

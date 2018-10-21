@@ -90,7 +90,8 @@
           <entry key="gitignore" value="3" />
           <entry key="json" value="2" />
           <entry key="lock" value="2" />
-          <entry key="php" value="107" />
+          <entry key="md" value="1" />
+          <entry key="php" value="112" />
           <entry key="sh" value="4" />
           <entry key="sql" value="3" />
           <entry key="xml" value="4" />
@@ -102,7 +103,8 @@
         <counts>
           <entry key="Dockerfile" value="4" />
           <entry key="JSON" value="4" />
-          <entry key="PHP" value="107" />
+          <entry key="Markdown" value="1" />
+          <entry key="PHP" value="112" />
           <entry key="PLAIN_TEXT" value="14" />
           <entry key="SQL" value="3" />
           <entry key="SmartyConfig" value="2" />
@@ -115,7 +117,8 @@
           <entry key="conf" value="2" />
           <entry key="dummy" value="5" />
           <entry key="env" value="4" />
-          <entry key="php" value="6290" />
+          <entry key="md" value="421" />
+          <entry key="php" value="6451" />
           <entry key="sh" value="25" />
           <entry key="sql" value="95" />
           <entry key="xml" value="49" />
@@ -125,7 +128,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="6290" />
+          <entry key="Markdown" value="421" />
+          <entry key="PHP" value="6451" />
           <entry key="PLAIN_TEXT" value="34" />
           <entry key="SQL" value="95" />
           <entry key="SmartyConfig" value="2" />
@@ -138,46 +142,49 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Domain/Service/OrderService.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="55" column="44" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Infrastructure/Persistence/Doctrine/Type/OrderIdDoctrineType.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-300">
-              <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Infrastructure/Persistence/Doctrine/Type/RouteDoctrineType.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Infrastructure/Dto/OrdersDto.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+            <state relative-caret-position="306">
+              <caret line="33" column="37" lean-forward="true" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Infrastructure/Service/HereMapDistance.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="526">
+              <caret line="46" column="1" lean-forward="true" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
+              <folding>
+                <element signature="e#72#115#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Domain/Model/Distance.php">
+        <entry file="file://$PROJECT_DIR$/src/Domain/Model/Route.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+            <state relative-caret-position="545">
+              <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Domain/Model/Location.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="373">
+              <caret line="52" column="30" lean-forward="true" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/beberlei/assert/lib/Assert/Assertion.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="673" column="27" selection-start-line="673" selection-start-column="27" selection-end-line="673" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -194,7 +201,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Infrastructure/Response/ApiSuccessJsonResponse.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="506">
@@ -207,10 +214,25 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Infrastructure/Request/ApiHttpRequest.php">
+        <entry file="file://$PROJECT_DIR$/readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="242">
+                <caret line="11" selection-start-line="11" selection-end-line="11" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Domain/OrderRepositoryInterface.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="682">
-              <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+            <state relative-caret-position="374">
+              <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+              <folding>
+                <element signature="e#58#85#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -220,15 +242,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="425">
               <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-end-line="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/symfony/http-foundation/JsonResponse.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="41" column="20" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -246,11 +259,16 @@
       <find>getAttribute</find>
       <find>calculate</find>
       <find>getAll</find>
+      <find>trackingId</find>
+      <find>$trackingId</find>
+      <find>cargo</find>
+      <find>guzz</find>
     </findStrings>
     <replaceStrings>
       <replace>$this-&gt;latitude</replace>
       <replace>namespace App\Domain\Model;</replace>
       <replace>Order</replace>
+      <replace>$orderId</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -265,8 +283,6 @@
         <option value="$PROJECT_DIR$/src/Infrastructure/Persistence/Doctrine/DoctrineCargoRepository.php" />
         <option value="$PROJECT_DIR$/src/Domain/Model/Spacing.php" />
         <option value="$PROJECT_DIR$/src/Domain/Model/Status.php" />
-        <option value="$PROJECT_DIR$/src/Domain/OrderRepositoryInterface.php" />
-        <option value="$PROJECT_DIR$/src/Domain/Model/Location.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/build.sh" />
         <option value="$PROJECT_DIR$/start.sh" />
@@ -288,7 +304,6 @@
         <option value="$PROJECT_DIR$/public/index.php" />
         <option value="$PROJECT_DIR$/src/Domain/Model/Route.php" />
         <option value="$PROJECT_DIR$/src/Domain/Model/Distance.php" />
-        <option value="$PROJECT_DIR$/src/Infrastructure/Service/HereMapDistance.php" />
         <option value="$PROJECT_DIR$/config/packages/doctrine.yaml" />
         <option value="$PROJECT_DIR$/DockerFiles/Mysql/query.sql" />
         <option value="$PROJECT_DIR$/config/services.yaml" />
@@ -296,13 +311,17 @@
         <option value="$PROJECT_DIR$/src/Infrastructure/Request/ApiHttpRequest.php" />
         <option value="$PROJECT_DIR$/src/Infrastructure/Dto/AllOrdersDto.php" />
         <option value="$PROJECT_DIR$/src/Controller/OrderController.php" />
-        <option value="$PROJECT_DIR$/src/Infrastructure/Dto/OrdersDto.php" />
         <option value="$PROJECT_DIR$/src/Domain/Model/OrderStatus.php" />
         <option value="$PROJECT_DIR$/src/Domain/Model/Order.php" />
         <option value="$PROJECT_DIR$/src/Domain/Service/OrderService.php" />
         <option value="$PROJECT_DIR$/src/Infrastructure/Persistence/Doctrine/ORM/Order.orm.xml" />
         <option value="$PROJECT_DIR$/src/Infrastructure/Response/ApiErrorJsonResponse.php" />
         <option value="$PROJECT_DIR$/src/Infrastructure/Response/ApiSuccessJsonResponse.php" />
+        <option value="$PROJECT_DIR$/readme.md" />
+        <option value="$PROJECT_DIR$/src/Domain/OrderRepositoryInterface.php" />
+        <option value="$PROJECT_DIR$/src/Infrastructure/Dto/OrdersDto.php" />
+        <option value="$PROJECT_DIR$/src/Domain/Model/Location.php" />
+        <option value="$PROJECT_DIR$/src/Infrastructure/Service/HereMapDistance.php" />
       </list>
     </option>
   </component>
@@ -573,12 +592,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1539977783688</updated>
-      <workItem from="1539977785330" duration="39633000" />
+      <workItem from="1539977785330" duration="41555000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39633000" />
+    <option name="totallyTimeSpent" value="41555000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -612,23 +631,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.env.dist">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/ramsey/uuid/src/Uuid.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-11489">
-          <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Domain/Model/OrderId.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="541">
@@ -750,23 +752,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Domain/Model/Route.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="40" column="7" selection-start-line="40" selection-start-column="7" selection-end-line="40" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Infrastructure/Service/HereMapDistance.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="573">
-          <caret line="39" column="1" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
-          <folding>
-            <element signature="e#72#115#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/packages/doctrine_migrations.yaml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -862,16 +847,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Domain/OrderRepositoryInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
-          <folding>
-            <element signature="e#58#85#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/packages/doctrine.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="550">
@@ -935,13 +910,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Infrastructure/Dto/OrdersDto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/OrderController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="411">
@@ -965,6 +933,64 @@
           <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
           <folding>
             <element signature="e#71#121#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="242">
+            <caret line="11" selection-start-line="11" selection-end-line="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Domain/OrderRepositoryInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+          <folding>
+            <element signature="e#58#85#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Domain/Model/Route.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/beberlei/assert/lib/Assert/Assertion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="673" column="27" selection-start-line="673" selection-start-column="27" selection-end-line="673" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Domain/Model/Location.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="52" column="30" lean-forward="true" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Infrastructure/Dto/OrdersDto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="33" column="37" lean-forward="true" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Infrastructure/Service/HereMapDistance.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="46" column="1" lean-forward="true" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
+          <folding>
+            <element signature="e#72#115#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

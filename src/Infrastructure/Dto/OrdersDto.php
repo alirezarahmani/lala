@@ -6,6 +6,13 @@ namespace App\Infrastructure\Dto;
 
 use App\Domain\Model\Order;
 
+/**
+ * Dto pattern
+ *
+ * https://martinfowler.com/eaaCatalog/dataTransferObject.html
+ * https://martinfowler.com/bliki/LocalDTO.html
+ *
+ */
 class OrdersDto
 {
     /**

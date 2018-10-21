@@ -12,11 +12,11 @@ interface OrderRepositoryInterface
     /**
      * Finds a order using given id.
      *
-     * @param OrderId $trackingId Id
+     * @param OrderId $orderId Id
      *
      * @return Order if found, else {@code null}
      */
-    public function get(OrderId $trackingId): ?Order;
+    public function get(OrderId $orderId): ?Order;
 
     /**
      * Saves given order.
@@ -28,5 +28,5 @@ interface OrderRepositoryInterface
     /**
      * @return OrderId A unique, generated tracking Id.
      */
-    public function getNextTrackingId(): OrderId;
+    public function getNextOrderId(): OrderId;
 }

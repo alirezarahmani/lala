@@ -47,7 +47,7 @@ class OrderService
      */
     public function addNewOrder($origin, $destination): array
     {
-        $orderId = $this->orderRepository->getNextTrackingId();
+        $orderId = $this->orderRepository->getNextOrderId();
 
         $route = new Route(Location::thatArray($origin), Location::thatArray($destination));
         $distance = new Distance($route, $this->distanceCalculator);
