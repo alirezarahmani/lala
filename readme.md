@@ -16,3 +16,8 @@ Notes:
 - I implement it with main focus on maintenance. 
 - Opcache is enabled.
 - I use UUID instead of auto generate Id, Only to be standard in DDD, not big deal.
+
+Tests:
+-
+
+just run : `docker-compose exec worker php vendor/phpunit/phpunit/phpunit` in project root.
